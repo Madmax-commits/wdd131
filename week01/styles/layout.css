@@ -1,4 +1,4 @@
-/* Base styles */
+ /* Base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,8 +48,8 @@ nav a:hover {
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 0rem;
+  padding: 0rem;
 }
 
 .main-content {
@@ -72,5 +72,6 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
 
 
