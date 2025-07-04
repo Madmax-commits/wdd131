@@ -59,7 +59,7 @@ main {
   text-align: center;
   width: 100%;
   display: block;
-  white-space: nowrap;
+  white-space: normal;
 }
 .main-content, .aside-content {
   background-color: #d7dbdd;
