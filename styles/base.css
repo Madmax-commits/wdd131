@@ -60,6 +60,7 @@ main {
   width: 100%;
   display: block;
   white-space: normal;
+  overflow-wrap: break-word;
 }
 .main-content, .aside-content {
   background-color: #d7dbdd;
