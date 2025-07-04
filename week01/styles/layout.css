@@ -48,8 +48,8 @@ nav a:hover {
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 0rem;
-  padding: 0rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .main-content {
@@ -72,6 +72,25 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+/*button {
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid rgb(200 200 0 / 60%);
+  background-color: rgb(0 217 217 / 60%);
+  color: rgb(100 0 0 / 100%);
+  box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
+  border-radius: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+}*/
 
+/* script */
+
+/* we ask for a new name to be entered then store that name in a variable called name.
+Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " 
+and join it to the name variable to create the complete text label, e.g., "Player 1: Chris".
+Running code in response to certain events occurring on a web page. We used a click event in our example above to detect 
+when the label is clicked and then run the code that updates the text label.  */
 
 
