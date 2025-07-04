@@ -58,7 +58,7 @@ main {
   font-weight: bold;
   text-align: center;
   width: 100%;
-  display: block;
+  display: flex;
   white-space: nowrap;
 }
 .main-content, .aside-content {
