@@ -1,0 +1,143 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6e0f8;
+  color: #333;
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #682d82;
+  color: white;
+  flex-wrap: wrap;
+}
+
+header h2 {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+/* Group nav and hamburger together on right */
+#mainNav {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+#mainNav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+#mainNav a:hover {
+  background-color: #8945aa;
+  border-radius: 4px;
+}
+
+#mainNav.open {
+  display: flex;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+figure img {
+  width: 269px;       /* consistent width */
+  height: 200px;      /* consistent height */
+  object-fit: cover;  /* crop and fill without distortion */
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+figcaption {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #682d82;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+#hamburger {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hide navigation by default */
+#mainNav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Reveal nav when open */
+#mainNav.open {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+
+  #mainNav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+  }
+}
+
