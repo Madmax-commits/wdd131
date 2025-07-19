@@ -1,0 +1,154 @@
+:root {
+  --blue: #003366;
+  --yellow: #FFD700;
+  --gray: #444;
+  --white: #fff;
+  --bg-light: #f4f4f4;
+  --overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--gray);
+}
+
+header {
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Card styling */
+.card {
+  background-color: var(--white);
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.card h2 {
+  color: white;
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+/* Default mobile view */
+.card h2 {
+  color: var(--blue);
+}
+
+/* Desktop view */
+@media (min-width: 600px) {
+  .card h2 {
+    color: white;
+  }
+}
+
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin: 0.5rem 0;
+}
+
+.card strong {
+  color: var(--gray);
+}
+
+.mobile-icon {
+  display: none;
+  width: 40px;
+}
+
+.weather .wide-icon::after {
+  content: "⛅";
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--gray);
+  color: var(--white);
+}
+
+/* ✅ Responsive adjustments for mobile view */
+@media (max-width: 599px) {
+  .weather .wide-icon::after {
+    content: "";
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+}
+
+/* ✅ Desktop layout styling */
+@media (min-width: 600px) {
+  body {
+    background: url("../images/newyork-desktop\ \(1\).webp") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--white);
+  }
+
+  .mobile-hero {
+    display: none;
+  }
+
+  main {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .card {
+    background-color: var(--overlay);
+    color: var(--white);
+    box-shadow: none;
+  }
+
+  .card strong {
+    color: var(--yellow);
+  }
+
+  .card.about {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    max-width: 300px;
+  }
+
+  .card.weather {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: 300px;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+
+  .weather .wide-icon::after {
+    content: "⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+

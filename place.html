@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New York City</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>New York City</h1>
+  </header>
+
+  <main>
+    <!-- Mobile view only hero image -->
+    <picture class="mobile-hero">
+      <source srcset="images/newyork-desktop (1).webp" media="(min-width: 600px)" />
+      <img src="images/newyork-desktop (1).webp" alt="New York Skyline" />
+    </picture>
+
+    <div class="overlay">
+      <section class="card about" id="about-box">
+        <h2>About New York</h2>
+        <ul>
+          <li><strong>Area:</strong> 783.8 km²</li>
+          <li><strong>Population:</strong> ~8.8 million</li>
+          <li><strong>Capital:</strong> Albany</li>
+          <li><strong>Language:</strong> English</li>
+          <li><strong>Currency:</strong> US Dollar</li>
+          <li><strong>Time Zone:</strong> UTC−5 / −4 DST</li>
+          <li><strong>Calling Code:</strong> +1</li>
+          <li><strong>Internet TLD:</strong> .us</li>
+        </ul>
+      </section>
+
+      <section class="card weather" id="weather-box">
+        <h2>Weather <span class="wide-icon"></span></h2>
+        <img class="mobile-icon" src="images/weather-icon.svg" alt="Weather Icon" />
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp">7</span>°C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> <span id="speed">5.5</span> km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="windchill">Loading...</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+
