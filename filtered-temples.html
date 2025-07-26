@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album – Temples Around the World</title>
+  <meta name="author" content="Tochukwu Carl-Mbanefo" />
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Temple Album featuring LDS temples around the world" />
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+  <header>
+    <h2>Temple Album</h2>
+    <button id="hamburger" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album: Temples Around the World</h1>
+    <h2 class="visually-hidden">Temple Gallery</h2>
+
+    <section class="gallery" id="templeGallery">
+      <!-- Temple cards will be dynamically inserted here via JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Tochukwu Carl-Mbanefo, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
+
