@@ -86,13 +86,13 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  {
+{
   templeName: "Accra Ghana",
   location: "Accra, Ghana",
   dedicated: "2004, January, 11",
   area: 17500,
   imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-1027062-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
 },
 {
   templeName: "Tokyo Japan",
@@ -100,7 +100,7 @@ const temples = [
   dedicated: "1980, October, 27",
   area: 52900,
   imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-lds-1027061-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
 },
 {
   templeName: "Johannesburg South Africa",
@@ -108,7 +108,7 @@ const temples = [
   dedicated: "1985, August, 24",
   area: 19000,
   imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-1027063-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
 }
 
 ];
