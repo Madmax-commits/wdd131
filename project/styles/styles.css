@@ -1,0 +1,24 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5F3E7;
+  color: #333;
+  margin: 2rem;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #5D3A66;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.accent {
+  color: #5D3A66;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
