@@ -63,11 +63,11 @@ footer {
 }
 
 /* Horizontally align the rating stars */
-.fieldset legend {
+.fieldset .legend {
   margin-bottom: 10px;
 }
 
-.fieldset label[for^="star"] {
+.fieldset .label[for^="star"] {
   display: inline-block;
   margin-right: 10px;
   font-size: 1.5em;
