@@ -55,5 +55,7 @@ document.querySelectorAll('body *').forEach(element => {
     });
   }
 });
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
 
