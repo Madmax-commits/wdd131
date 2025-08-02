@@ -6,7 +6,7 @@ body {
   padding: 20px;
 }
 
-header h1 {
+.header h1 {
   text-align: center;
   background-color: #0055a5;
   color: white;
