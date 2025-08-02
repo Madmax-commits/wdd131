@@ -34,5 +34,26 @@ ratingInputs.forEach((input, index) => {
     document.getElementById('ratingValue').textContent = `Selected Rating: ${input.value} star${input.value > 1 ? 's' : ''}`;
   });
 });
+document.querySelectorAll('body *').forEach(element => {
+  if (element.childNodes.length > 0) {
+    element.childNodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('(Optional)')) {
+        const parts = node.textContent.split('(Optional)');
+        const span = document.createElement('span');
+        span.style.color = 'blue';
+        span.textContent = '(Optional)';
+
+        const fragment = document.createDocumentFragment();
+        fragment.appendChild(document.createTextNode(parts[0]));
+        fragment.appendChild(span);
+        if (parts[1]) {
+          fragment.appendChild(document.createTextNode(parts[1]));
+        }
+
+        element.replaceChild(fragment, node);
+      }
+    });
+  }
+});
 
 
