@@ -82,3 +82,20 @@ footer {
   color: #666;
 }
 
+.rating-stars {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rating-stars input[type="radio"] {
+  display: none; /* optional: hide radio buttons */
+}
+
+.rating-stars label {
+  font-size: 1.5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+
