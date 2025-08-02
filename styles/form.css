@@ -53,11 +53,13 @@ fieldset label[for^="star"] {
   margin-right: 10px;
   font-size: 1.5em;
   cursor: pointer;
+  appearance: none;
 }
 
 input[type="radio"][id^="star"] {
   display: inline-block;
   margin-right: 5px;
+  appearance: none;
 }
 
 input[type="submit"] {
