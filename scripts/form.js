@@ -15,4 +15,24 @@ products.forEach(product => {
   selectElement.appendChild(option);
 });
 
+const ratingInputs = document.querySelectorAll('input[name="rating"]');
+const ratingLabels = document.querySelectorAll('.rating-stars label');
+
+ratingInputs.forEach((input, index) => {
+  input.addEventListener('change', () => {
+    // Reset all label colors
+    ratingLabels.forEach(label => {
+      label.style.color = '#ccc';
+    });
+
+    // Highlight selected stars up to the chosen one
+    for (let i = 0; i <= index; i++) {
+      ratingLabels[i].style.color = 'gold';
+    }
+
+    // Update rating display
+    document.getElementById('ratingValue').textContent = `Selected Rating: ${input.value} star${input.value > 1 ? 's' : ''}`;
+  });
+});
+
 
