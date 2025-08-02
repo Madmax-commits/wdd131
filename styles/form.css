@@ -6,6 +6,16 @@ body {
   padding: 20px;
 }
 
+header h1 {
+  text-align: center;
+  background-color: #0055a5;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
 form {
   max-width: 600px;
   margin: auto;
