@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
@@ -6,7 +7,7 @@ body {
   padding: 20px;
 }
 
-/* Fix: Correct selector from .header h1 to header h1 */
+/* Header */
 header h1 {
   text-align: center;
   background-color: #0055a5;
@@ -17,51 +18,40 @@ header h1 {
   margin-bottom: 20px;
 }
 
+/* Form Container */
 form {
   max-width: 600px;
   margin: auto;
   background: white;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Labels and Legends */
 label, legend {
   display: block;
   margin-top: 15px;
   font-weight: bold;
 }
 
+/* Inputs, Selects, Textareas */
 input, select, textarea {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+/* Fieldsets */
 fieldset {
   border: none;
   padding: 0;
 }
 
-/* ✅ New: Horizontally align Overall Rating stars */
-fieldset legend {
-  margin-bottom: 10px;
-}
-
-fieldset label[for^="star"] {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 1.5em;
-  cursor: pointer;
-  appearance: none;
-}
-
-input[type="radio"][id^="star"] {
-  display: inline-block;
-  margin-right: 5px;
-  appearance: none;
-}
-
+/* Submit Button */
 input[type="submit"] {
   margin-top: 20px;
   background-color: #0055a5;
@@ -69,12 +59,18 @@ input[type="submit"] {
   border: none;
   padding: 10px;
   cursor: pointer;
+  font-size: 1em;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type="submit"]:hover {
   background-color: #003f7f;
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 40px;
@@ -82,25 +78,16 @@ footer {
   color: #666;
 }
 
+/* Rating Stars */
 .rating-stars {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   margin-top: 10px;
 }
 
 .rating-stars input[type="radio"] {
-  display: none; /* optional: hide radio buttons */
-}
-
-.rating-stars label {
-  font-size: 1.5em;
-  cursor: pointer;
-  user-select: none;
-}
-.rating-stars {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  display: none;
 }
 
 .rating-stars label {
@@ -108,10 +95,39 @@ footer {
   cursor: pointer;
   user-select: none;
   padding: 5px;
+  color: #ccc;
+  transition: color 0.2s;
 }
 
-.rating-stars input[type="radio"] {
-  display: none;
+/* Hover effect */
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: gold;
+}
+
+/* Selected effect */
+.rating-stars input[type="radio"]:checked ~ label {
+  color: gold;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .rating-stars {
+    gap: 5px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
 }
 
 
