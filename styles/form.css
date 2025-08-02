@@ -75,6 +75,7 @@ footer {
 }
 
 .input[type="radio"][id^="star"] {
+  display: inline-block;
   margin-right: 5px;
 }
 
