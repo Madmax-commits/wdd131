@@ -129,5 +129,12 @@ footer {
     width: 100%;
   }
 }
+#lastModified {
+  font-size: 0.9rem;
+  color: #007BFF; /* Blue shade */
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: center;
+}
 
 
