@@ -25,3 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(`You've visited this site ${localStorage.getItem("visits")} times.`);
 });
 
+const toggleBtn = document.getElementById("menu-toggle");
+const closeBtn = document.getElementById("menu-close");
+const navList = document.querySelector("#main-nav ul");
+
+toggleBtn.addEventListener("click", () => {
+  navList.classList.add("show");
+  closeBtn.classList.add("show");
+  toggleBtn.style.display = "none";
+});
+
+closeBtn.addEventListener("click", () => {
+  navList.classList.remove("show");
+  closeBtn.classList.remove("show");
+  toggleBtn.style.display = "block";
+});
