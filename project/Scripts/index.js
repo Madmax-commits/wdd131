@@ -27,16 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const toggleBtn = document.getElementById("menu-toggle");
 const closeBtn = document.getElementById("menu-close");
-const navList = document.querySelector("#main-nav ul");
+const mobileNav = document.getElementById("mobile-nav");
 
 toggleBtn.addEventListener("click", () => {
-  navList.classList.add("show");
-  closeBtn.classList.add("show");
-  toggleBtn.style.display = "none";
+  mobileNav.classList.add("show");
 });
 
 closeBtn.addEventListener("click", () => {
-  navList.classList.remove("show");
-  closeBtn.classList.remove("show");
-  toggleBtn.style.display = "block";
+  mobileNav.classList.remove("show");
 });
