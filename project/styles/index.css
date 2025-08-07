@@ -76,10 +76,9 @@ footer {
 #mobile-nav {
   display: none;
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 100%;
+  top: 4rem;
+  right: 1rem;
+  width: 250px;
   background-color: #222;
   padding: 2rem;
   z-index: 1000;
