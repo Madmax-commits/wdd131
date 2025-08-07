@@ -110,7 +110,7 @@ footer {
   color: white;
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: calc(250px + 2rem); /* positions it to the left of the menu */;
   z-index: 1100;
   cursor: pointer;
 }
