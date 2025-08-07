@@ -25,16 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(`You've visited this site ${localStorage.getItem("visits")} times.`);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.getElementById("menu-btn");
-  const closeBtn = document.getElementById("close-btn");
-  const mobileNav = document.getElementById("mobile-nav");
-
-  menuBtn.addEventListener("click", () => {
-    mobileNav.style.display = "block";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    mobileNav.style.display = "none";
-  });
-});
