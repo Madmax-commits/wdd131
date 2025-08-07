@@ -83,7 +83,6 @@ footer {
   background-color: #222;
   padding: 2rem;
   z-index: 1000;
-  transition: transform 0.3s ease-in-out;
 }
 
 #mobile-nav ul {
@@ -115,10 +114,18 @@ footer {
   cursor: pointer;
 }
 
-/* Mobile view only */
+/* Desktop nav is visible only on large screens */
+#desktop-nav {
+  display: block;
+}
+
 @media (max-width: 600px) {
   #menu-toggle {
     display: block;
+  }
+
+  #desktop-nav {
+    display: none;
   }
 
   #mobile-nav.show {
@@ -127,9 +134,5 @@ footer {
 
   #menu-close {
     display: block;
-  }
-
-  nav#main-nav {
-    display: none;
   }
 }
