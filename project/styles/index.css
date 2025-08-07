@@ -79,6 +79,7 @@ footer {
   top: 4rem;
   right: 1rem;
   width: 250px;
+  border-radius: 8px;
   background-color: #222;
   padding: 2rem;
   z-index: 1000;
