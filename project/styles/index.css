@@ -332,3 +332,42 @@ footer {
   position: relative;
   z-index: 1;
 }
+/* Prevent horizontal overflow */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure hero section fills the screen and doesn't overflow */
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Fullscreen background image */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Ensure content layers above the image */
+.hero h2,
+.hero p,
+.animated-text {
+  position: relative;
+  z-index: 1;
+}
