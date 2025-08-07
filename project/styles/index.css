@@ -377,3 +377,11 @@ body, html {
   position: relative;
   z-index: 1;
 }
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
