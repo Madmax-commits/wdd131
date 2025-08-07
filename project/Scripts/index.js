@@ -100,3 +100,42 @@ setInterval(() => {
   index = (index + 1) % phrases.length;
   movingText.textContent = phrases[index];
 }, 3000);
+
+  // Create the animated text element
+  const animatedText = document.createElement('div');
+  animatedText.textContent = 'Art in Motion';
+
+  // Apply styles directly with JS
+  Object.assign(animatedText.style, {
+    position: 'absolute',
+    fontSize: '2rem',
+    fontFamily: 'Montserrat, sans-serif',
+    color: '#fff',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    padding: '0.5rem 1rem',
+    borderRadius: '8px',
+    zIndex: '1000',
+    textAlign: 'center',
+    maxWidth: '90%',
+    whiteSpace: 'nowrap',
+    animation: 'floatText 4s ease-in-out infinite'
+  });
+
+  // Append to body
+  document.body.appendChild(animatedText);
+
+  // Center it using viewport dimensions
+  function centerText() {
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const rect = animatedText.getBoundingClientRect();
+
+    animatedText.style.left = `${(vw - rect.width) / 2}px`;
+    animatedText.style.top = `${(vh - rect.height) / 2}px`;
+  }
+
+  // Initial center and on resize
+  centerText();
+  window.addEventListener('resize', centerText);
+
+
