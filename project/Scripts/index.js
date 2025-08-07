@@ -76,3 +76,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Add animation to favorite output
+const showFavorite = document.getElementById("showFavorite");
+const favoriteOutput = document.getElementById("favoriteOutput");
+
+if (showFavorite && favoriteOutput) {
+  showFavorite.addEventListener("click", () => {
+    const favorite = "Digital Illustration";
+    favoriteOutput.textContent = `🎯 Your favorite medium is: ${favorite}`;
+    favoriteOutput.style.opacity = 0;
+    favoriteOutput.style.transition = "opacity 0.8s ease";
+    setTimeout(() => {
+      favoriteOutput.style.opacity = 1;
+    }, 100);
+  });
+}
