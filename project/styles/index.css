@@ -134,16 +134,3 @@ footer {
   background-color: #222;
   color: #fff;
 }
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f4f4f4;
-  font-size: 0.9rem;
-}
-
-footer a {
-  margin-left: 10px;
-  color: #0077cc;
-  text-decoration: none;
-}
-
