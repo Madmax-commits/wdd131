@@ -3,43 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Creative Arts Hub – A personal showcase and resource hub for visual and performing arts." />
-  <title>Creative Arts Hub</title>
+  <title>Creative Pulse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
-<header>
   <header>
-  <h1>Creative Arts Hub</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="tutorials.html">Tutorials</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-
+    <h1 id="welcome">Creative Pulse</h1>
+    <button class="hamburger" aria-label="Open menu">&#9776;</button>
+    <nav class="nav-popup">
+      <button class="close-btn" aria-label="Close menu">&times;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
-    <section>
-      <h2 id="welcome">Welcome to My Creative Space</h2>
-      <p>Explore original artwork, creative insights, and resources for aspiring artists.</p>
-      <img class="hero-img" src="https://media.istockphoto.com/id/1456211690/photo/a-talented-male-artist-creates-a-modern-masterpiece.webp?a=1&b=1&s=612x612&w=0&k=20&c=WiqZ5HHdEPBMQxFxsvX6H4UMbS8OSrnIcD-kDMtVpvs=" alt="Colorful abstract painting" loading="lazy" />
+    <section class="hero">
+      <h2>Welcome to Creative Pulse</h2>
+      <p>Explore the rhythm of creativity through visual and performing arts.</p>
+      <img src="images/hero.jpg" alt="Creative artwork" loading="lazy" />
     </section>
 
     <section>
-      <h3>Featured Mediums</h3>
+      <h2>Art Mediums</h2>
       <ul id="mediums-list"></ul>
+    </section>
+
+    <section class="favorites">
+      <h2>Your Favorite Medium</h2>
+      <button id="showFavorite">Show Favorite</button>
+      <p id="favoriteOutput"></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Creative Arts Hub | Tochukwu Ayobami Carl-Mbanefo</p>
+    <p>&copy; 2025 Creative Pulse</p>
     <a href="references.html">References</a>
   </footer>
 
