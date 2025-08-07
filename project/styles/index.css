@@ -297,6 +297,16 @@ footer {
   animation: floatText 4s ease-in-out infinite;
   z-index: 1;
 }
+.animated-text {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
 @keyframes floatText {
   0% { transform: translate(-50%, -50%) translateY(0); }
