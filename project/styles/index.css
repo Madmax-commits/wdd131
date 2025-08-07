@@ -180,3 +180,36 @@ footer {
 .card a:hover {
   background-color: #444;
 }
+
+#tutorialList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+#tutorialList li {
+  background-color: #fff;
+  border-left: 4px solid #222;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+#tutorialList li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  color: #222;
+  margin: 2rem 1rem 1rem;
+  text-align: center;
+}
