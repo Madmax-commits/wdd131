@@ -91,3 +91,12 @@ if (showFavorite && favoriteOutput) {
     }, 100);
   });
 }
+
+const movingText = document.getElementById("movingText");
+const phrases = ["Creative Pulse", "Gallery", "Inspiration", "Art in Motion"];
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % phrases.length;
+  movingText.textContent = phrases[index];
+}, 3000);
