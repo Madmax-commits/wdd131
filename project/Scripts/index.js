@@ -25,14 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(`You've visited this site ${localStorage.getItem("visits")} times.`);
 });
 
-const toggleBtn = document.getElementById("menu-toggle");
-const closeBtn = document.getElementById("menu-close");
-const mobileNav = document.getElementById("mobile-nav");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const mobileNav = document.getElementById("mobile-nav");
 
-toggleBtn.addEventListener("click", () => {
-  mobileNav.classList.add("show");
-});
+  menuBtn.addEventListener("click", () => {
+    mobileNav.style.display = "block";
+  });
 
-closeBtn.addEventListener("click", () => {
-  mobileNav.classList.remove("show");
+  closeBtn.addEventListener("click", () => {
+    mobileNav.style.display = "none";
+  });
 });
