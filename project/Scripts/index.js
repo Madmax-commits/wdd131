@@ -25,16 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(`You've visited this site ${localStorage.getItem("visits")} times.`);
 });
 
-
-  const hamburger = document.querySelector('.hamburger');
-  const navPopup = document.querySelector('.nav-popup');
-  const closeBtn = document.querySelector('.close-btn');
-
-  hamburger.addEventListener('click', () => {
-    navPopup.style.display = 'flex';
-  });
-
-  closeBtn.addEventListener('click', () => {
-    navPopup.style.display = 'none';
-  });
-
