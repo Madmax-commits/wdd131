@@ -65,3 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const footer = document.getElementById("site-footer");
+
+  if (footer) {
+    footer.innerHTML = `
+      <p>&copy; 2025 Creative Pulse</p>
+      <a href="references.html">References</a>
+    `;
+  }
+});
+
